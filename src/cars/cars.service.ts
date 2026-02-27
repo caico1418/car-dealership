@@ -18,5 +18,9 @@ export class CarsService {
             brand: 'Jeep',
             model: 'Cherokee'
         },
-    ]
+    ];
+
+    findAll() {
+        return this.cars;
+    }
 }
