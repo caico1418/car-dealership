@@ -23,4 +23,13 @@ export class CarsService {
     findAll() {
         return this.cars;
     }
+
+    findOneNyId( id: number ) {
+        const car = this.cars.find(c => c.id === id);
+        console.log({car});
+        
+        return {
+            car
+        }
+    }
 }
